@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+  background-image: url("./assets/3d-abstract-wave-pattern-background.jpg");
+  background-size: cover;
+}
+#filtered {
+  height: 0;
+  transition: height 0.5s ease-in-out;
+}
+
+#filtered.full {
+  height: 200px;
+}
+
+#filtered li:hover{
+  --tw-bg-opacity: 1;
+    background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+    border-radius: 7px;
+    cursor: pointer;
+    color: whitesmoke;
+}
